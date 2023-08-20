@@ -8,13 +8,13 @@ public class Orc {
     public int level;
     public int exp;
 
-    public Orc(String newName) {
-        setName(newName);
-        setLevel(1);
-        setExp(0);
-        setHp(100);
-        setDamage(5);
-        setDefence(5);
+    public Orc(String newName, int newLevel, int newExp, int newHp, int newDamage, int newDefence) {
+        name = newName;
+        level = newLevel;
+        exp = newExp;
+        hp = newHp;
+        damage = newDamage;
+        defence = newDefence;
     }
 
     public String getName() {
