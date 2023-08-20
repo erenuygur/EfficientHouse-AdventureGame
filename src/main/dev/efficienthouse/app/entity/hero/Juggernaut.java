@@ -1,6 +1,6 @@
 package main.dev.efficienthouse.app.entity.hero;
 
-public class Warrior {
+public class Juggernaut {
     public String name;
     public double hp;
     public int damage;
@@ -8,7 +8,7 @@ public class Warrior {
     public int exp;
     public int level;
 
-    public Warrior(String newName, double newHp, int newStrength, int newDefense, int newExp, int newLevel) {
+    public Juggernaut(String newName, double newHp, int newStrength, int newDefense, int newExp, int newLevel) {
         name = newName;
         hp = newHp;
         damage = newStrength;
@@ -64,5 +64,4 @@ public class Warrior {
     public void setLevel(int newLevel) {
         level = newLevel;
     }
-
 }
