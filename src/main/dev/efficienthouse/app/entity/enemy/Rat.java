@@ -1,6 +1,7 @@
 package main.dev.efficienthouse.app.entity.enemy;
 
-public class Goblin {
+public class Rat {
+
     public String name;
     public int hp;
     public int damage;
@@ -8,7 +9,7 @@ public class Goblin {
     public int level;
     public int exp;
 
-    public Goblin(String newName, int newLevel, int newExp, int newHp, int newDamage, int newDefence) {
+    public Rat(String newName, int newLevel, int newExp, int newHp, int newDamage, int newDefence) {
         name = newName;
         level = newLevel;
         exp = newExp;
@@ -64,4 +65,5 @@ public class Goblin {
     public void setExp(int exp) {
         this.exp = exp;
     }
+
 }
