@@ -7,6 +7,7 @@ public class Bandit {
     public int defense;
     public int exp;
     public int level;
+    public int coin;
 
     public Bandit(String newName, double newHp, int newStrength, int newDefense, int newExp, int newLevel) {
         name = newName;
@@ -15,6 +16,10 @@ public class Bandit {
         defense = newDefense;
         exp = newExp;
         level = newLevel;
+    }
+
+    public boolean isSufficientCoin(int price) {
+        return coin >= price;
     }
 
     public String getName() {
@@ -63,5 +68,13 @@ public class Bandit {
 
     public void setLevel(int newLevel) {
         level = newLevel;
+    }
+
+    public int getCoin(){
+        return coin;
+    }
+
+    public void setCoin(int newCoin) {
+        coin = newCoin;
     }
 }
