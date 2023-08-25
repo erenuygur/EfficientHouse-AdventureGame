@@ -9,13 +9,17 @@ public class Druid {
     public int level;
     public int coin;
 
-    public Druid(String newName, double newHp, int newStrength, int newDefense, int newExp, int newLevel) {
+    public Druid(String newName, double newHp, int newDamage, int newDefense, int newExp, int newLevel) {
         name = newName;
         hp = newHp;
-        damage = newStrength;
+        damage = newDamage;
         defense = newDefense;
         exp = newExp;
         level = newLevel;
+    }
+
+    public int getTotalDamage() {
+        return damage;
     }
 
     public boolean isSufficientCoin(int price) {
