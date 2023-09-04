@@ -1,27 +1,23 @@
 package main.dev.efficienthouse.app.item.weapons;
-
-import java.util.Random;
-
 public class Axe {
     public String name;
     public String tier;
     public boolean isOneHanded;
-    public int minDamage;
-    public int maxDamage;
-    public int durability;
-    public int range;
-    public double weight;
 
-    public Axe(String newName, String newTier, boolean newOneHand, int newMinDamage, int newMaxDamge, int newDurability, int newRange, double newWeight) {
+    public int damage;
+    public int durability;
+    public double weight;
+    public int price;
+
+    public Axe(String newName, String newTier, int newDamage, int newDurability, double newWeight, boolean newOneHand,int newPrice) {
         name = newName;
         tier = newTier;
-        isOneHanded = newOneHand;
-        minDamage = newMinDamage;
-        maxDamage = newMaxDamge;
+        damage = newDamage;
         durability = newDurability;
-        range = newRange;
         weight = newWeight;
-
+        isOneHanded = newOneHand;
+        price = newPrice;
     }
+
 }
 

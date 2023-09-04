@@ -1,23 +1,23 @@
 package main.dev.efficienthouse.app.item.armors;
-
 public class ChestPlate {
     public String name;
     public String tier;
-    public int minDefence;
-    public int maxDefence;
+    public int defence;
+    public double durability;
     public double weight;
-    public int durability;
+    public double strength;
+    public double speed;
+    public int price;
 
-
-    public ChestPlate(String newName, String newTier, int newMinDefence, int newMaxDefence, int newDurability, double newWeight) {
+    public ChestPlate(String newName, String newTier, int newDefence, double newDurability, double newWeight,double newStrength,double newSpeed,int newPrice) {
         name = newName;
         tier = newTier;
-        minDefence = newMinDefence;
-        maxDefence = newMaxDefence;
+        defence = newDefence;
         durability = newDurability;
         weight = newWeight;
-
+        strength = newStrength;
+        speed = newSpeed;
+        price = newPrice;
     }
-
 }
 
