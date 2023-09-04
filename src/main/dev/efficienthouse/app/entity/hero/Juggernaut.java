@@ -7,14 +7,23 @@ public class Juggernaut {
     public int defense;
     public int exp;
     public int level;
+    public int coin;
 
-    public Juggernaut(String newName, double newHp, int newStrength, int newDefense, int newExp, int newLevel) {
+    public Juggernaut(String newName, double newHp, int newDamage, int newDefense, int newExp, int newLevel) {
         name = newName;
         hp = newHp;
-        damage = newStrength;
+        damage = newDamage;
         defense = newDefense;
         exp = newExp;
         level = newLevel;
+    }
+
+    public int getTotalDamage() {
+        return damage;
+    }
+
+    public boolean isSufficientCoin(int price) {
+        return coin >= price;
     }
 
     public String getName() {
@@ -63,5 +72,13 @@ public class Juggernaut {
 
     public void setLevel(int newLevel) {
         level = newLevel;
+    }
+
+    public int getCoin(){
+        return coin;
+    }
+
+    public void setCoin(int newCoin) {
+        coin = newCoin;
     }
 }
