@@ -3,19 +3,21 @@ package main.dev.efficienthouse.app.item.weapons;
 public class Sword {
     public String name;
     public String tier;
-    public boolean oneHand;
-    public boolean throwable;
-    public int minDamage;
-    public int maxDamage;
 
-    public Sword(String newName, String newTier, boolean newOneHand, boolean newThrowable, int newMinDamage, int newMaxDamge) {
+    public int damage;
+    public int durability;
+    public double weight;
+    public boolean isOneHanded;
+    public int price;
+
+    public Sword(String newName, String newTier, int newDamage, int newDurability, double newWeight, boolean newOneHand,int newPrice) {
         name = newName;
         tier = newTier;
-        oneHand = newOneHand;
-        throwable = newThrowable;
-        minDamage = newMinDamage;
-        maxDamage = newMaxDamge;
-
+        damage = newDamage;
+        durability = newDurability;
+        weight = newWeight;
+        isOneHanded = newOneHand;
+        price = newPrice;
     }
 }
 

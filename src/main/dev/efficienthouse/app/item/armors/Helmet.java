@@ -1,24 +1,24 @@
 package main.dev.efficienthouse.app.item.armors;
 
 public class Helmet {
-
     public String name;
     public String tier;
-    public int minDefence;
-    public int maxDefence;
+
+    public int defence;
     public int durability;
-    public int strength;
     public double weight;
-
-
-    public Helmet(String newName, String newTier, int newMinDefence, int newMaxDefence, int newDurability, int newStrength, double newWeight) {
+    public double strength;
+    public double speed;
+    public int price;
+    public Helmet(String newName, String newTier, int newDefence ,int newDurability, double newWeight,double newStrength,double newSpeed,int newPrice) {
         name = newName;
         tier = newTier;
-        minDefence = newMinDefence;
-        maxDefence = newMaxDefence;
+        defence = newDefence;
         durability = newDurability;
-        strength = newStrength;
         weight = newWeight;
+        strength = newStrength;
+        speed = newSpeed;
+        price = newPrice;
 
     }
 }

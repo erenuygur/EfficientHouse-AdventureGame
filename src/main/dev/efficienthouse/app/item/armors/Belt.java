@@ -1,22 +1,26 @@
 package main.dev.efficienthouse.app.item.armors;
 
+import java.util.Random;
+
 public class Belt {
-        public String name;
-        public String tier;
-        public int minDefence;
-        public int maxDefence;
-        public int durability;
-        public double weight;
+    public String name;
+    public String tier;
 
-
-        public Belt(String newName, String newTier, int newMinDefence, int newMaxDefence, int newDurability, double newWeight) {
-            name = newName;
-            tier = newTier;
-            minDefence = newMinDefence;
-            maxDefence = newMaxDefence;
-            durability = newDurability;
-            weight = newWeight;
-
-        }
+    public int defence;
+    public int durability;
+    public double weight;
+    public double strength;
+    public double speed;
+    public int price;
+    public Belt(String newName, String newTier, int newDefence, int newDurability, double newWeight,double newStrength,double newSpeed,int newPrice) {
+        name = newName;
+        tier = newTier;
+        defence = newDefence;
+        durability = newDurability;
+        weight = newWeight;
+        strength = newStrength;
+        speed = newSpeed;
+        price = newPrice;
     }
+}
 
